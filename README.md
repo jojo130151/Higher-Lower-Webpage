@@ -2,4 +2,4 @@
 This is a webpage that shows the standard higher-lower game that many developers are familiar with.
 There is HTML, CSS, and JavaScript incorporated together.
 
-higherlowergame.website
+www.higherlowergame.website
