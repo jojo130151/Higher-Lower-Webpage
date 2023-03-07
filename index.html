@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Higher Lower Game</title>
+    <meta name="author" content="Jordan Davis">
+    <meta charset="utf-8">
+    <meta
+        name="description"
+        content="The Higher Lower Game is a single page game where the user tries to guess a number with higher and lower hints given until they get it right.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest"> 
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="main">
+        <h1>Higher - Lower</h1>
+        <P id="para">Guess a number between 1 and <span id=maxNum></span>.</P>
+        <label for="numberInput" id="labelGuess">Your Guess:</label>
+        <br>
+        <input type="text" id="numberInput">
+        <br>
+        <button class="submit" id="numSubmit" onclick="onClick()">Guess</button>
+        <p id="message"></p>
+        <button class="restart" type="button" onClick="window.location.reload()">
+            Restart
+         </button>
+    </div>
+    <footer>
+        Jordan Davis - Dev10 - 2/16/2023
+    </footer>
+</div>
+    <script src="scripts/funcs.js"></script>
+    <script src="scripts/numberGuess.js"></script>
+</body>
+
+</html>

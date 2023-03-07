@@ -1,0 +1,394 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body {
+    background-attachment: fixed;
+    background: linear-gradient(to bottom, #dc6900 0%, #eb8c00 22%, #e0301e 48%, #a32020 69%, #602320 90%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-image: url("../texture-velvet-color-texture-background-preview.jpg");
+    background-repeat: repeat;
+    background-color: #8f8f8e;
+    /* Center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* /Center */
+    border-radius: 1.5vw;
+    height: fit-content;
+}
+
+.main, footer {
+    background-color: #eb8c00;
+    border-radius: 1.5vw;
+    border: solid 2px black;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    text-align: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background-color: #777777;
+    box-shadow: 1px 1px 4px #dc6900;
+    border-radius: 3px;
+    color: black;
+}
+
+button,
+label,
+input {
+    margin-top: 1.4vw;
+}
+
+.restart {
+    margin-top: 0;
+}
+
+
+/* extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575px) {
+    
+    body {
+        height: 100%;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 1.3vw;
+    }
+    
+    .main, footer {
+        min-width: 80%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 3.9vw;
+        margin-top: 25vw;
+        margin-bottom: 5vw;
+        padding: 1.8vw;
+    }
+    
+    input {
+        height: 2.7vw;
+        font-size: 2.4vw;
+    }
+    
+    footer {
+        font-size: 2.3vw;
+        padding: 1.7vw;
+        margin-bottom: 25vw;
+    }
+}
+
+/* extra small devices (landscape mode, less than 576px)*/
+@media screen and (max-width: 575px) and (orientation: landscape) {
+    
+    body {
+        height: 100%;
+    }
+    
+    .container {
+        width: 92%;
+        padding: 1.1vw;
+    }
+    
+    .main, footer {
+        min-width: 80%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 2.4vw;
+        margin-top: 1vw;
+        margin-bottom: 1.5vw;
+        padding: 1vw;
+    }
+    
+    input {
+        height: 2vw;
+        font-size: 1.8vw;
+    }
+    
+    footer {
+        font-size: 2vw;
+        padding: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+}
+
+/* small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 92%;
+        padding: 1.3vw;
+    }
+    
+    .main, footer {
+        min-width: 75%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 3.4vw;
+        margin-top: 20vw;
+        margin-bottom: 5vw;
+        padding: 1.8vw;
+    }
+    
+    input {
+        height: 2.4vw;
+        font-size: 2.2vw;
+    }
+    
+    footer {
+        font-size: 2vw;
+        padding: 1.7vw;
+        margin-bottom: 20vw;
+    }
+}
+
+
+/* small devices (landscape mode, 576px and up)*/
+@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape){
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 92%;
+        padding: 1vw;
+    }
+    
+    .main, footer {
+        min-width: 75%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 2.35vw;
+        margin-top: 1.8vw;
+        margin-bottom: 1.8vw;
+        padding: 1vw;
+    }
+    
+    input {
+        height: 2.1vw;
+        font-size: 1.9vw;
+    }
+    
+    footer {
+        font-size: 1.7vw;
+        padding: 1.7vw;
+        margin-bottom: 1.8vw;
+    }
+}
+
+
+/* medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 70%;
+        padding: 1.5vw;
+    }
+    
+    .main, footer {
+        min-width: 55%;
+        max-width: 80%;
+    }
+    
+    .main {
+        font-size: 2.6vw;
+        max-width: 80%;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        padding: 2vw;
+    }
+    
+    input {
+        height: 2.3vw;
+        font-size: 2.1vw;
+    }
+    
+    footer {
+        padding: 1.7vw;
+        margin-bottom: 5vw;
+
+    }
+}
+
+/* medium devices (portrait mode, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 75%;
+        padding: 1.5vw;
+    }
+    
+    .main, footer {
+        min-width: 75%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 2.7vw;
+        max-width: 80%;
+        margin-top: 18vw;
+        margin-bottom: 5vw;
+        padding: 2.3vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    
+    input {
+        height: 2.6vw;
+        font-size: 2.3vw;
+    }
+    
+    footer {
+        padding: 1.88vw;
+        margin-bottom: 18vw;
+        font-size: 2vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1445px) {
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 70%;
+        padding: 1.5vw;
+    }
+    
+    .main, footer {
+        min-width: 65%;
+        max-width: 80%;
+    }
+    
+    .main {
+        font-size: 2vw;
+        max-width: 80%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        padding: 2vw;
+    }
+    
+    input {
+        height: 1.5vw;
+        font-size: large;
+    }
+    
+    footer {
+        padding: 1.7vw;
+        margin-bottom: 2vw;
+    }
+}
+
+/* Large devices (portrait mode, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1499px) and (orientation: portrait) {
+    
+    body {
+        height: 100%;
+        
+    }
+    
+    .container {
+        width: 80%;
+        padding: 1.5vw;
+    }
+    
+    .main, footer {
+        min-width: 75%;
+        max-width: 90%;
+    }
+    
+    .main {
+        font-size: 3.2vw;
+        margin-top: 10vw;
+        margin-bottom: 3vw;
+        padding: 2vw;
+    }
+    
+    input {
+        height: 2.5vw;
+        font-size: 2.2vw;
+    }
+    
+    footer {
+        font-size: 2.4vw;
+        padding: 1.7vw;
+        margin-bottom: 10vw;
+    }
+}
+
+/* Extra large devices (large desktops, 1400px and up) */
+@media screen and (min-width: 1446px) {
+    body {
+        height: 90%;
+        
+    }
+    
+    .container {
+        width: 70%;
+        padding: 1.5vw;
+    }
+    
+    .main, footer {
+        min-width: 65%;
+        max-width: 80%;
+    }
+    
+    .main {
+        font-size: 2.9vw;
+        margin-top: 14vw;
+        margin-bottom: 5vw;
+        padding: 2.5vw;
+    }
+
+    input {
+        height: 2.8vw;
+        font-size: 2.4vw;
+    }
+    
+    footer {
+        font-size: 1.7vw;
+        padding: 1.7vw;
+        margin-bottom: 14vw;
+    }
+}
